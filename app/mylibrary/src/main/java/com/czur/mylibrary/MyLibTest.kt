@@ -3,7 +3,7 @@ package com.czur.mylibrary
 public class MyLibTest {
 
     public fun calculation(number: Int): Int {
-        return number * number
+        return number * 3
     }
 
     //echo "# myLibTest" >> README.md
