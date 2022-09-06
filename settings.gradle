@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "DemoCZUR"
 include ':app'
-include ':app:mylibrary'
+//include ':app:mylibrary'

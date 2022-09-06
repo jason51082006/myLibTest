@@ -3,7 +3,8 @@ package com.czur.democzur
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.czur.mylibrary.MyLibTest;
+import com.czur.mylibrary.MyLibTest
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -11,9 +12,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val param = 13
+        val param = 14
         val res = MyLibTest().calculation(param)
-        Log.e("Jason", "MyLibTest().calculation(${param})=${res}")
+        val str = "MyLibTest().calculation(${param})=${res}"
+        tv2?.text = str
+        Log.e("Jason", str)
 
     }
 }
